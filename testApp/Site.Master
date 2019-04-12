@@ -73,7 +73,7 @@
                         <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                        <li><a href="/Customer/RegisterDetails.aspx">Register your details</a></li>
+                        <li><a href="/Customer/CustomerProfile.aspx">Register your details</a></li>
                         </ul>
                         </li>
                         </ul>

@@ -24,6 +24,7 @@
             <asp:TextBox runat="server" CssClass="form-control" ID="UserEmail"></asp:TextBox>
             <label for ="UserPassword">Enter your Password</label>
             <asp:TextBox runat="server" CssClass="form-control" ID="UserPassword"></asp:TextBox>
+
         </div>
         </div>        
     <div class="col-md-6">
@@ -31,10 +32,9 @@
          <em ID="GridHelp" class="form-text text-muted">Please complete the form in order to register your customer details.</em>
            <br />
             <br />        
-            <asp:GridView runat="server" CssClass="table table-striped" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="UserID" DataSourceID="CustomerRegisterDataSource" ForeColor="#333333" GridLines="None" ID="UserGridView">
+            <asp:GridView runat="server" CssClass="table table-striped" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="UserID" DataSourceID="CustomerRegisterDataSource" ForeColor="#333333" GridLines="None" ID="UserGridView" Visible="True" ViewStateMode="Inherit">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
                 <asp:BoundField DataField="UserFName" HeaderText="UserFName" SortExpression="UserFName" />
                 <asp:BoundField DataField="UserLName" HeaderText="UserLName" SortExpression="UserLName" />
@@ -53,7 +53,7 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
          </asp:GridView>
 
-         <asp:SqlDataSource ID="CustomerRegisterDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Lost&FoundConnectionString %>" DeleteCommand="DELETE FROM [UserTbl] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [UserTbl] ([UserFName], [UserLName], [UserEmail], [UserPassword]) VALUES (@UserFName, @UserLName, @UserEmail, @UserPassword)" SelectCommand="SELECT * FROM [UserTbl] where UserEmail=@x" UpdateCommand="UPDATE [UserTbl] SET [UserFName] = @UserFName, [UserLName] = @UserLName, [UserEmail] = @UserEmail, [UserPassword] = @UserPassword WHERE [UserID] = @UserID">
+         <asp:SqlDataSource ID="CustomerRegisterDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Lost&FoundConnectionString %>" DeleteCommand="DELETE FROM [UserTbl] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [UserTbl] ([UserFName], [UserLName], [UserEmail], [UserPassword]) VALUES (@UserFName, @UserLName, @UserEmail, @UserPassword)" SelectCommand="SELECT * FROM [UserTbl] where UserEmail=@x" UpdateCommand="UPDATE [UserTbl] SET [UserFName] = @UserFName, [UserLName] = @UserLName, [UserEmail] = @UserEmail, [UserPassword] = @UserPassword WHERE  UserEmail=@x">
              <DeleteParameters>
                  <asp:Parameter Name="UserID" Type="Int32" />
              </DeleteParameters>
@@ -67,11 +67,11 @@
                  <asp:SessionParameter Name="x" SessionField="Email" />
              </SelectParameters>
              <UpdateParameters>
-                 <asp:Parameter Name="UserFName" Type="String" />
-                 <asp:Parameter Name="UserLName" Type="String" />
-                 <asp:Parameter Name="UserEmail" Type="String" />
-                 <asp:Parameter Name="UserPassword" Type="String" />
-                 <asp:Parameter Name="UserID" Type="Int32" />
+                 <asp:ControlParameter ControlID="UserFName" Name="UserFName" PropertyName="Text" Type="String" />
+                 <asp:ControlParameter ControlID="UserSName" Name="UserLName" PropertyName="Text" Type="String" />
+                 <asp:ControlParameter ControlID="UserEmail" Name="UserEmail" PropertyName="Text" Type="String" />
+                 <asp:ControlParameter ControlID="UserPassword" Name="UserPassword" PropertyName="Text" Type="String" />
+                 <asp:SessionParameter Name="x" SessionField="Email" />
              </UpdateParameters>
          </asp:SqlDataSource>
         </div>
@@ -81,9 +81,9 @@
      <br />
     <div class="row">
     <div style="text-align: left">
-        <asp:Button ID="btn1" runat="server" CssClass="btn btn-success btn-lg" Text="Submit" OnClick="btn1_Click" />
-        
+        <asp:Button ID="btn1" runat="server" CssClass="btn btn-success btn-lg" Text="Generate Profile " OnClick="btn1_Click" UseSubmitBehavior="false" OnClientClick="this.disabled='true'; this.value='Generating profile...';"   />      
         <asp:Button ID="btn2" runat="server" CssClass="btn btn-danger btn-lg" Text="Clear Data" OnClick="btn2_Click" />
+         <asp:Button ID="btn3" runat="server" CssClass="btn btn-warning btn-lg" Text="Update your profile" OnClick="btn3_Click"/>
     </div>
     </div>
 </asp:Content>
