@@ -49,6 +49,15 @@ namespace testApp {
         protected global::System.Web.UI.WebControls.TextBox UserPassword;
         
         /// <summary>
+        /// ProfilePhotoUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload ProfilePhotoUpload;
+        
+        /// <summary>
         /// UserGridView control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace testApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource CustomerRegisterDataSource;
+        
+        /// <summary>
+        /// CustomerRptr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater CustomerRptr;
         
         /// <summary>
         /// btn1 control.

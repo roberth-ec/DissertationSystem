@@ -13,6 +13,7 @@ namespace testApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            CustomerRegisterDataSource.DataBind();
             Session["Email"] = System.Web.HttpContext.Current.User.Identity.Name;
             UserEmail.Text = Session["Email"].ToString();
             if (UserGridView.Rows.Count==1) {
