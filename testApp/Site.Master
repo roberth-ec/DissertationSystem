@@ -65,7 +65,8 @@
                         </a>
                         <ul class="dropdown-menu">
                         <li><a href="/Admin/AddRolesToUser.aspx">Assign User Roles</a></li>
-                        <li><a href= "/Admin/AddRoles.aspx">Create Roles</a></li>
+                        <li><a href= "/Admin/AddRoles.aspx">Create & Manage Roles</a></li>
+                        <li><a href= "/Admin/ReportStatus.aspx">Create & manage report status</a></li>
                         </ul>
                         </li>
                         <li class="dropdown">

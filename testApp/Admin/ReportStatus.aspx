@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ReportStatus.aspx.cs" Inherits="testApp.WebForm4" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
- <div class="row">
+    <div class="row">
     <div class="col-md-6">
     <div><h1>Generate new report status <i class="fas fa-plus"></i></h1></div>
     <hr />
