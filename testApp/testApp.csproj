@@ -202,6 +202,8 @@
     <Content Include="Admin\AddRolesToUser.aspx" />
     <Content Include="Customer\CustomerProfile.aspx" />
     <Content Include="Admin\ReportStatus.aspx" />
+    <Content Include="Admin\ReportType.aspx" />
+    <Content Include="Admin\ItemCategory.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -422,6 +424,20 @@
     </Compile>
     <Compile Include="Admin\ReportStatus.aspx.designer.cs">
       <DependentUpon>ReportStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportType.aspx.cs">
+      <DependentUpon>ReportType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportType.aspx.designer.cs">
+      <DependentUpon>ReportType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ItemCategory.aspx.cs">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ItemCategory.aspx.designer.cs">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
