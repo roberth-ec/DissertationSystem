@@ -201,7 +201,7 @@
     <Content Include="Customer\Web.config" />
     <Content Include="Admin\AddRolesToUser.aspx" />
     <Content Include="Customer\CustomerProfile.aspx" />
-    <Content Include="WebForm4.aspx" />
+    <Content Include="ReportStatus.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -416,12 +416,12 @@
     <Compile Include="Customer\CustomerProfile.aspx.designer.cs">
       <DependentUpon>CustomerProfile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm4.aspx.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
+    <Compile Include="ReportStatus.aspx.cs">
+      <DependentUpon>ReportStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm4.aspx.designer.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
+    <Compile Include="ReportStatus.aspx.designer.cs">
+      <DependentUpon>ReportStatus.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

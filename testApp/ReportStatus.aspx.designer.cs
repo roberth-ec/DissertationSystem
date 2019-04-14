@@ -13,57 +13,48 @@ namespace testApp {
     public partial class WebForm4 {
         
         /// <summary>
-        /// totxt control.
+        /// ReportStatusName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox totxt;
+        protected global::System.Web.UI.WebControls.TextBox ReportStatusName;
         
         /// <summary>
-        /// fromtxt control.
+        /// btn1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fromtxt;
+        protected global::System.Web.UI.WebControls.Button btn1;
         
         /// <summary>
-        /// subjecttxt control.
+        /// Btn2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox subjecttxt;
+        protected global::System.Web.UI.WebControls.Button Btn2;
         
         /// <summary>
-        /// body control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox body;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// sendbtn control.
+        /// ReportStatusDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sendbtn;
-        
-        /// <summary>
-        /// status control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label status;
+        protected global::System.Web.UI.WebControls.SqlDataSource ReportStatusDataSource;
     }
 }
