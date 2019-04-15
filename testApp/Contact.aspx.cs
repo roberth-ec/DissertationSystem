@@ -24,8 +24,8 @@ namespace testApp
                 {
                     string str = UserMessage.Text.Replace("\r\n", "<br>");
                     MailMessage mailMessage = new MailMessage();
-                    mailMessage.From = new MailAddress("roberthsteven1997@gmail.com");
-                    mailMessage.To.Add("roberthsteven1997@gmail.com");
+                    mailMessage.From = new MailAddress("contactus.lostandfound@gmail.com");
+                    mailMessage.To.Add("contactus.lostandfound@gmail.com");
 
                     mailMessage.Subject = UserSubject.Text;
                     mailMessage.Body = "<b> Sender Name: </b>" + UserName.Text + "<br/>" +
@@ -36,7 +36,7 @@ namespace testApp
 
                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                     client.EnableSsl = true;
-                    client.Credentials = new System.Net.NetworkCredential("roberthsteven1997@gmail.com", "tecktonic1");
+                    client.Credentials = new System.Net.NetworkCredential("contactus.lostandfound@gmail.com", "Lostandfound1!");
                     client.Send(mailMessage);
                     infolbl.ForeColor = System.Drawing.Color.Green;
                     infolbl.Text = "Your enquiry has been sent! A member of the team with be in touch with you shortly";
