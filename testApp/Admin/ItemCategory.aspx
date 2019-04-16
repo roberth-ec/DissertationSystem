@@ -31,7 +31,7 @@
             <div class="col-md-6">
                 <p id="gridhelp" class="form-text text-danger">From the table below you can edit and delete existing item categories</p>
                 <br />
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="ItemCategoryID" DataSourceID="ItemCategoryDataSource" GridLines="Vertical" CssClass="table table-striped">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="ItemCategoryID" DataSourceID="ItemCategoryDataSource" GridLines="Vertical" CssClass="table table-striped" AllowPaging="True" PageSize="3">
                     <AlternatingRowStyle BackColor="#DCDCDC" />
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />

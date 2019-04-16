@@ -37,7 +37,17 @@
         Old Royal Naval College<br />
         London,SE10 9LS
         </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9938.601666978586!2d-0.006995!3d51.4829308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa66a5fccf89e51c4!2sUniversity+of+Greenwich!5e0!3m2!1sen!2suk!4v1554829342017!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="map" style="height: 300px; width: 650px;"></div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnN3LBYWOFLCci1OnrBsGWc-5l72iXg-k&callback=initMap">
+        </script>
+        <script>
+            function initMap() {
+                var LostAndFoundOffices = { lat: 51.482656, lng: -0.004584 };
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 16, center: LostAndFoundOffices });
+                var marker = new google.maps.Marker({ position: LostAndFoundOffices, map: map });
+            }
+        </script>
         </div>
         </div>
     
