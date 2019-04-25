@@ -78,6 +78,7 @@
                         <ul class="dropdown-menu">
                         <li><a href="/Customer/CustomerProfile.aspx">View your profile</a></li>
                         <li><a href="/Customer/LostReport.aspx">Report lost item</a></li>
+                        <li><a href="/Customer/ManageReports.aspx">Manage your report</a></li>
                         </ul>
                         </li>
                         </ul>

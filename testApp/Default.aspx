@@ -10,7 +10,7 @@
         <p class="lead" style="text-align: center">Click on one of the buttons below to make use of our online property reporting system.</p>
         <div style="text-align: center">
         <a href="/Customer/LostReport.aspx" class="btn btn-danger btn-lg">Report Lost Property &raquo;</a>
-        <a href="About.Aspx" class="btn btn-primary btn-lg">Report Found Property &raquo;</a>
+        <a href="/Customer/ManageReports.Aspx" class="btn btn-primary btn-lg">Manage your report &raquo;</a>
         </div>
     </div>
     

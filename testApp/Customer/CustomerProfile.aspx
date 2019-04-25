@@ -61,7 +61,7 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
          </asp:GridView>
 
-         <asp:SqlDataSource ID="CustomerRegisterDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Lost&FoundConnectionString %>" DeleteCommand="DELETE FROM [UserTbl] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [UserTbl] ([UserFName], [UserLName], [UserEmail], [UserPassword],[UserImage]) VALUES (@UserFName, @UserLName, @UserEmail, @UserPassword,@UserImage)" SelectCommand="SELECT * FROM [UserTbl] where UserEmail=@x" UpdateCommand="UPDATE [UserTbl] SET [UserFName] = @UserFName, [UserLName] = @UserLName, [UserEmail] = @UserEmail, [UserPassword] = @UserPassword WHERE  UserEmail=@x">
+         <asp:SqlDataSource ID="CustomerRegisterDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:Lost&FoundConnectionString %>" DeleteCommand="DELETE FROM [UserTbl] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [UserTbl] ([UserFName], [UserLName], [UserEmail], [UserPassword],[UserImage]) VALUES (@UserFName, @UserLName, @UserEmail, @UserPassword,@UserImage)" SelectCommand="SELECT * FROM [UserTbl] where UserEmail=@x" UpdateCommand="UPDATE [UserTbl] SET [UserFName] = @UserFName, [UserLName] = @UserLName, [UserEmail] = @UserEmail, [UserPassword] = @UserPassword, [UserImage]=@UserImage WHERE  UserEmail=@x">
              <DeleteParameters>
                  <asp:Parameter Name="UserID" Type="Int32" />
              </DeleteParameters>
@@ -81,6 +81,7 @@
                  <asp:ControlParameter ControlID="UserEmail" Name="UserEmail" PropertyName="Text" Type="String" />
                  <asp:ControlParameter ControlID="UserPassword" Name="UserPassword" PropertyName="Text" Type="String" />
                  <asp:SessionParameter Name="x" SessionField="Email" />
+                 <asp:ControlParameter ControlID="ProfilePhotoUpload" Name="UserImage" PropertyName="FileBytes" />
              </UpdateParameters>
          </asp:SqlDataSource>
         </div>

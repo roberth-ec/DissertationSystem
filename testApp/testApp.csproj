@@ -205,6 +205,7 @@
     <Content Include="Admin\ReportType.aspx" />
     <Content Include="Admin\ItemCategory.aspx" />
     <Content Include="Customer\LostReport.aspx" />
+    <Content Include="Customer\ManageReports.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -446,6 +447,13 @@
     </Compile>
     <Compile Include="Customer\LostReport.aspx.designer.cs">
       <DependentUpon>LostReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ManageReports.aspx.cs">
+      <DependentUpon>ManageReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ManageReports.aspx.designer.cs">
+      <DependentUpon>ManageReports.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
