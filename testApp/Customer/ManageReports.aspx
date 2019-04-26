@@ -6,8 +6,8 @@
     <p>Below you will find all the reports created by you!</p>
    </div>
     <div class="container">
-    <div class=”table-responsive”>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"  ForeColor="#333333"  CellPadding="3" DataKeyNames="ReportID" DataSourceID="ReportDataSource"  GridLines="None"  OnRowDataBound="GridView1_RowDataBound" CssClass="table table-striped" AllowPaging="True" PageSize="2">
+    <div class=table-responsive>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"  ForeColor="#333333"  CellPadding="3" DataKeyNames="ReportID" DataSourceID="ReportDataSource"  GridLines="None"  OnRowDataBound="GridView1_RowDataBound" CssClass="table table-striped responsive lg" AllowPaging="True" PageSize="2">
             <AlternatingRowStyle  BackColor="White" ForeColor="#284775"  />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -29,7 +29,7 @@
                 <asp:BoundField DataField="" HeaderText="Location" SortExpression="">
                 </asp:BoundField>
             </Columns>
-            <EditRowStyle VerticalAlign="Top" BackColor="#999999" />
+            <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
             <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
@@ -77,6 +77,6 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
-        </div>
+   </div>
 
 </asp:Content>
