@@ -13,12 +13,12 @@
     <div class="row">
         <div class="col-md-6">
         <h3>
-            <strong>Location<span class="rounded-tab">
+            <strong>1. Location<span class="rounded-tab">
                 <span class="fa fa-map-pin"></span></span></strong></h3>
         <h4>Provide information about where the item was last seen</h4>
     </div>
         <div class="col-md-6">
-            <h3><strong>Item<span class="fa fa-cube"></span></strong></h3>
+            <h3><strong>2. Item<span class="fa fa-cube"></span></strong></h3>
             <h4>Provide as much detail as you can about your lost or found item</h4>
         </div>
         </div>

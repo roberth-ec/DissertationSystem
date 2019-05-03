@@ -18,7 +18,7 @@
 
     <br />
     <div class=”table-responsive”>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="RolesDataSource" ForeColor="#333333" GridLines="None" HorizontalAlign="Justify" CssClass="table table-striped">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="RolesDataSource" ForeColor="#333333" GridLines="None" HorizontalAlign="Justify" CssClass="table table-striped" >
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />

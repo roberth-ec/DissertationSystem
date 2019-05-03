@@ -15,13 +15,13 @@
     </div>
     
     <div class="row">
-        <div class="col-md-6">
+        
             <div class="panel panel-info">
-            <div class="panel-heading"><h2>General News</h2></div>
+            <div class="panel-heading"><h2>What is time bank?</h2></div>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+Timebanking is a way of spending one hour of time helping someone out by, for example, mowing someone’s lawn, or doing their shopping. For every hour spent, you earn an hour in return. This can be spent on receiving an hour of someone else’s time or, where available, things like theatre or cinema tickets.  You could learn something new or share a skill you have like cooking or playing a musical instrument.
             </p>
+                
             <%--<p>
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
             </p>--%>
@@ -37,20 +37,6 @@
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
             </p>
         </div>--%>
-        <div class="col-md-6" >
-            <div class="panel panel-info">
-             <div class="panel-heading"><h2>Latest Items reported as found</h2></div>
-            <p>
-                You can easily find a items reported as lost from the list bellow
-            </p>
-                <ul>
-                 <li>Coffee</li>
-                 <li>Tea</li>
-                 <li>Milk</li>
-                </ul>
-            </div>
-    </div>
-    </div>
    
 
 </asp:Content>

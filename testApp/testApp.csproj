@@ -207,6 +207,8 @@
     <Content Include="Customer\LostReport.aspx" />
     <Content Include="Customer\ManageReports.aspx" />
     <Content Include="Admin\CompareReports.aspx" />
+    <Content Include="Admin\MasterWalletBalance.aspx" />
+    <Content Include="Admin\TransactionPage.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -462,6 +464,20 @@
     </Compile>
     <Compile Include="Admin\CompareReports.aspx.designer.cs">
       <DependentUpon>CompareReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MasterWalletBalance.aspx.cs">
+      <DependentUpon>MasterWalletBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MasterWalletBalance.aspx.designer.cs">
+      <DependentUpon>MasterWalletBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TransactionPage.aspx.cs">
+      <DependentUpon>TransactionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TransactionPage.aspx.designer.cs">
+      <DependentUpon>TransactionPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
